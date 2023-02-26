@@ -1,0 +1,16 @@
+// importación de variables
+
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+
+
+/*estilos de la sección nosotros */
+
+    .img-banner{
+        @include img-total;
+    }
+
+    .nosotros-content{
+        padding: 5%;
+        color: $color-principal;
+    }

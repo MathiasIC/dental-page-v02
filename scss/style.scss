@@ -1,0 +1,85 @@
+// importación de variables
+
+@import "utilidades/vars";
+@import "utilidades/mixin";
+
+/* reset parámetros */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-style: none;
+}
+
+/* estilos genericos */
+
+    body{
+        font-family: $tipografia-principal;
+    }
+
+    .font{
+        font-family: $tipografia-principal;
+    }
+   
+    footer{
+        margin-bottom: 0;
+        height: fit-content;
+        width: 100%;
+        @include flex-center;
+        background-color: $color-principal;
+        align-items: flex-end;
+            
+    }
+
+    .footer-container{
+        height: fit-content;
+        width: 100%;
+        padding: 3rem,6rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: center;
+    }
+
+    .footer-container-info{
+        @include flex-center;
+    }
+
+    .footer-derechos{
+        color: rgba(255, 255, 255, 0.904);
+        font-style: italic;
+    }
+    
+    .footer-logo{
+        width: 300px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .footer-container-redes{
+        background-color: $color-principal;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+
+    .footer-redes-img{
+        width: 100%;
+        margin: 10px;
+    }
+    
+    .bg-light{
+        font-weight: bold;
+        font-family: $tipografia-principal;
+        font-size: 18px;
+    }
+
+// importación estilos de los html
+
+@import "html/home";
+@import "html/especialidades";
+@import "html/cuidados";
+@import "html/nosotros";
+@import "html/contacto";

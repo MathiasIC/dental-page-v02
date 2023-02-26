@@ -1,0 +1,12 @@
+// mixin
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin img-total{
+    width: 100%;
+    height: auto;
+}

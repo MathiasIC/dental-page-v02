@@ -1,0 +1,26 @@
+// importación de variables
+
+@import "../utilidades/vars";
+
+
+/* estilos de la sección cuidados */
+
+.centrado-cuidados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    color: $color-principal;
+}
+
+.img-cuidados{
+    margin: 5%;
+    width: 80%;
+}  
+
+.img-cuidados:hover{
+    border-style: dashed;
+}
+
+

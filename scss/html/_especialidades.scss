@@ -1,0 +1,36 @@
+// importación de variables
+
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+
+/* estilos de la sección especialidades */
+
+.img-esp{
+    @include img-total;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px
+}
+
+.content-esp{
+    padding: 5% 10%;
+    color: $color-principal;
+}
+
+
+   @media screen and (min-width:940px){
+    
+    .img-esp{
+        width: 100%;
+        box-shadow: 5px 5px
+    }
+
+    .content-esp{
+        padding: 5%;
+        display: grid;
+        grid-template-columns: repeat(2,40%);
+        justify-content: center;
+        gap: 50px;
+    }
+
+} 
+

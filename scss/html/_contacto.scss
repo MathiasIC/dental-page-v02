@@ -1,0 +1,40 @@
+// importación de variables
+
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+
+/* estilos de la sección contacto */
+
+form{
+    margin: 40px 50px;
+    text-align: center;
+
+    label{
+        display: block;
+        color: $color-principal;
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+
+.contacto{
+    margin: 0 0 18px;
+    padding: 10px 30px;
+    border-color: $color-principal;
+    border-style:solid;
+}
+
+.enviar{
+    background-color: $color-principal;
+    color: white;
+    @extend %button;
+    cursor: pointer;
+    text-align: center;
+}
+
+.enviar:hover{
+    scale: 1.15;
+    background-color: $button-pulse;
+}

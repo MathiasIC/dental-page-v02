@@ -1,0 +1,49 @@
+// importación de variables
+
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+
+/* estilos de la sección inicio */
+
+.main-container{
+    padding: 5% 10%;
+    display: grid;
+    gap: 30px;
+   }
+
+   .main-img{
+      @include img-total;
+   }
+
+   .main-text-container{
+       color: $color-principal;
+       width: 80%;
+       margin-top: 5%;
+   }
+
+   .main-title{
+       font-size: 30px;
+       font-weight: bold;
+   }
+
+   .main-parrafo{
+       font-size: 15px;
+   }
+  
+   @media screen and (min-width:940px){
+
+       .main-container{
+           padding: 5%;
+           display: grid;
+           grid-template-columns: repeat(3,30%);
+           justify-content: center;
+           text-align: start;
+       }
+       
+       .main-img{
+           width: 90%;
+       }
+
+
+   } 
+
