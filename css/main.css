@@ -162,7 +162,9 @@ form {
   margin: 0 0 18px;
   padding: 10px 30px;
   border-color: #00b7ae;
-  border-style: solid; }
+  border-style: solid;
+  border-width: thin;
+  width: 100%; }
 
 .enviar {
   background-color: #00b7ae;
@@ -173,3 +175,36 @@ form {
 .enviar:hover {
   scale: 1.15;
   background-color: rgba(187, 148, 40, 0.986); }
+
+@media screen and (min-width: 940px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2em 2em;
+    grid-auto-flow: row;
+    grid-template-areas: "map form";
+    margin: 20px; }
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 0.25fr 0.5fr 0.5fr 0.25fr;
+    gap: 20px 30px;
+    grid-auto-flow: row;
+    grid-template-areas: "name tel" "correo correo" "textBox textBox" "checkBox checkBox" "button button";
+    grid-area: form; }
+  .name {
+    grid-area: name; }
+  .tel {
+    grid-area: tel; }
+  .correo {
+    grid-area: correo; }
+  .textBox {
+    grid-area: textBox; }
+  .checkBox {
+    grid-area: checkBox; }
+  .button {
+    grid-area: button; }
+  .map {
+    grid-area: map;
+    margin-top: 50px; } }
